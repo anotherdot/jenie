@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Averia+Gruesa+Libre);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+/* ----- Global */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #2980b9;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+  margin: 0rem;
+  min-width: 320px;
+}
+
+a,
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+/* ----- main-header */
+.main-header {
+  background-color: #333;
+  text-align: center;
+  padding: 0 1rem 2rem;
+  box-shadow: 0 1vw 0 rgba(0, 0, 0, 0.25);
+}
+
+.product-title {
+  color: #fff;
+  font-family: 'Lobster', sans-serif;
+  font-size: 7rem;
+  padding-bottom: 1rem;
+}
+
+.product-subtitle {
+  color: #fff;
+  font-size: .6rem;
+  text-align: right;
+  margin: -2.0rem 4rem 2rem 0;
+}
+
+.chan-btn {
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: #2980b9;
+  margin: 0 4rem;
+  padding: .5rem;
+  box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
+}
+
+.chan-btn:hover {
+  color: #2980b9;
+  background: #fff;
+  box-shadow: 0 1vw 0 rgba(41, 128, 185, 1);
+}
+
+img.messenger {
+  max-width: 10vw;
+  margin: -.3rem .5rem -.7rem -.5rem;
+}
+
+/* ----- main-content */
+.main-content {
+  text-align: center;
+}
+
+.content-text {
+  margin: 2rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+img.phone {
+  max-height: 80vh;
+  box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
+}
+
+.news-banner {
+  background-color: #333;
+  font-size: .75rem;
+  font-weight: 500;
+  margin: 3rem 0;
+  padding: 1rem .5rem;
+  box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
+}
+
+#mc_embed_signup {
+  color: #444;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+input#mce-EMAIL::-webkit-input-placeholder {
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* IE fix */
+input#mce-EMAIL:-ms-input-placeholder {
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+}
+
+input#mce-EMAIL {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2980b9;
+  width: 12rem;
+  border: 0;
+}
+
+input#mce-EMAIL:focus {
+  outline: 0;
+}
+
+/* remove IE clear button */
+input#mce-EMAIL::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
+#mc-embedded-subscribe {
+  background: url("../img/submit.png") no-repeat;
+  background-size: contain;
+  width: 4vw;
+  height: .75rem;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ----- main-footer */
+.main-footer {
+  font-size: .75rem;
+  color: rgba(0, 0, 0, .25);
+  text-align: right;
+  margin: 0 1rem .5rem 1rem;
+}
+
+/* ----- responsive */
+@media (max-width: 1024px) {
+  img.phone { max-width: 60vw; }
+}
