@@ -20,19 +20,18 @@ html, body {
 
 a,
 a:visited {
-  color: rgba(0, 0, 0, 0.5);
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #222;
+  color: #fff;
   text-decoration: none;
 }
 
-h2 {
-  color: rgba(0, 0, 0, 0.5);
-  text-transform: none;
-  margin: 0;
+.logo-text {
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
 }
 
 /* ----- responsive */
@@ -66,6 +65,7 @@ h2 {
 }
 
 .chan-btn {
+  display: inline;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
@@ -86,7 +86,7 @@ h2 {
   box-shadow: 0 1vw 0 rgba(41, 128, 185, 1);
 }
 
-img.messenger {
+img.chan-img {
   width: 8vw;
   max-width: 80px;
   margin: -.3rem .5rem -.6rem 0rem;
@@ -105,8 +105,7 @@ img.messenger {
 
 img.phone {
   width: 60vw;
-  max-width: 512px;
-  box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
+  max-width: 480px;
 }
 
 .faq-container {
@@ -177,7 +176,7 @@ img.phone {
 
 .news-banner {
   background-color: #333;
-  font-size: .75rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin: 3rem 0;
   padding: 1rem .5rem;
@@ -204,10 +203,10 @@ input#mce-EMAIL:-ms-input-placeholder {
 input#mce-EMAIL {
   background-color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #2980b9;
-  width: 12rem;
+  width: 18.25rem;
   border: 0;
 }
 
@@ -233,10 +232,17 @@ input#mce-EMAIL::-ms-clear {
 /* ----- main-footer */
 .main-footer {
   color: rgba(0, 0, 0, .25);
-  font-size: .75rem;
+  font-size: .65rem;
   text-align: left;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 1.5rem 1rem;
   overflow: hidden;
+}
+
+@media screen and (orientation: portrait) {
+  .main-footer {
+    font-size: .85rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 .footer-column-1 {
@@ -246,4 +252,9 @@ input#mce-EMAIL::-ms-clear {
 .footer-column-2 {
   text-align: right;
   float: right;
+}
+
+img.footer-btn {
+  width: 5vw;
+  max-width: 56px;
 }
