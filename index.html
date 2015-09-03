@@ -12,7 +12,7 @@
 
     <div class="product-title">Jenie</div>
     <div class="product-subtitle">24/7 personal assistant in Metro Manila</div>
-    <a href="./"><div class="chan-btn" onmouseover="document.chanimg.src='{{ site.baseurl }}/img/supportkit0.png'" onmouseout="document.chanimg.src='{{ site.baseurl }}/img/supportkit1.png'"><img name="chanimg" class="chan-img" src="{{ site.baseurl }}/img/supportkit1.png" />talk to me now</div></a>
+    <button id="chan-btn" onmouseover="document.chanimg.src='{{ site.baseurl }}/img/supportkit0.png'" onmouseout="document.chanimg.src='{{ site.baseurl }}/img/supportkit1.png'"><img name="chanimg" class="chan-img" src="{{ site.baseurl }}/img/supportkit1.png" />talk to me now</button>
 
   </div>
 
@@ -32,7 +32,7 @@
 
     <p class="faq-container">
 
-      <div class="round-button"><div class="round-button-circle"><a id="toggle-faq" class="round-button">Q & A</a></div></div>
+      <button id="faq-btn" class="round-button-circle">Q & A</button>
 
       <div class="faq-content">
 
@@ -99,7 +99,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="https://cdn.supportkit.io/supportkit.min.js"></script>
   <script>
-      SupportKit.init({appToken: 'ckf2c4cc1qwmhsyhq6czo4flv'});
+		var sk = SupportKit
+		sk . init ( {
+			appToken : 'ckf2c4cc1qwmhsyhq6czo4flv'
+			, customText : { headerText : ' talk to me now ' }
+			, emailCaptureEnabled : true
+		} )
+			. done ( function (   ) {
+				$ ( ' #chan-btn ' ) . click ( function (   ) { sk . open (   ) } )
+			} )
   </script>
   <script src="{{ site.baseurl }}/import/global.js"></script>
 

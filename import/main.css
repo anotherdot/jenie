@@ -64,8 +64,7 @@ a:hover {
   margin: -2rem -4rem 2rem 0;
 }
 
-.chan-btn {
-  display: inline;
+#chan-btn {
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
@@ -78,9 +77,11 @@ a:hover {
   margin: 0 auto;
   padding: .5rem;
   box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
+  border: none;
+  cursor: pointer;
 }
 
-.chan-btn:hover {
+#chan-btn:hover {
   color: #2980b9;
   background: #fff;
   box-shadow: 0 1vw 0 rgba(41, 128, 185, 1);
@@ -112,46 +113,26 @@ img.phone {
   font-size: 1.2rem;
 }
 
-.round-button {
-  font-size: .75rem;
+#faq-btn {
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
   font-weight: 700;
-  width: 10vw;
-  max-width: 128px;
-  margin: 0 auto;
-}
-
-.round-button-circle {
-  width: 100%;
-  height:0;
-  padding-bottom: 100%;
-  border-radius: 50%;
-  overflow:hidden;
   background: #333;
+  width: 512px;
+  max-width: 20vw;
+  margin: 0 auto;
+  padding: .5rem;
   box-shadow: 0 1vw 0 rgba(0, 0, 0, .25);
-}
-
-.round-button-circle:hover {
-  background:#fff;
-}
-
-.round-button a {
-  display:block;
-  float:left;
-  width:100%;
-  padding-top:50%;
-  padding-bottom:50%;
-  line-height:1rem;
-  margin-top:-.5rem;
-  text-align:center;
-  color:#fff;
-}
-
-.round-button a:hover {
-  color: #2980b9;
-}
-
-#toggle-faq {
+  border: none;
   cursor: pointer;
+}
+
+#faq-btn:hover {
+  color: #2980b9;
+  background: #fff;
 }
 
 .faq-content {
